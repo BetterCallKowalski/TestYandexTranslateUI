@@ -1,58 +1,68 @@
-from tests.utils.ui import UI
+import yaml
+from tests.yui.yui import YUI
 
 
 class TestYandexTranslateUI:
     """ Yandex Translate UI test suite. """
 
-    @staticmethod
-    def setup():
+    def setup(self):
         """
         Opens 'https://translate.yandex.ru' with chromedriver.
         """
-        UI.open_website()
+        config = yaml.safe_load(open('config.yml', encoding='utf-8'))  # Loading config from 'config.yml'
 
-    @staticmethod
-    def teardown():
+        self.yui = YUI(config['chromedriver_path'])
+        self.yui.open_website(config['yatr_url'])
+
+    def teardown(self):
         """
         Close the chromedriver window.
         """
-        UI.close_website()
-
-    def test_source_field_works(self):
-        """
-        Checks, that source field works correct.
-        """
-        UI.translate_text('s')
-        assert UI.read_source_text() == 's'
+        self.yui.close_website()
 
     def test_en_ru_translation(self):
         """
         Checks correct english-russian translation.
         """
-        UI.select_languages('en', 'ru')
-        UI.translate_text('cat')
-        assert UI.read_translation() == 'кошка'
+
+        self.yui.select_languages('en', 'ru')
+        self.yui.translate_text('cat')
+        assert self.yui.read_translation() == 'кошка'
 
     def test_ru_en_translation(self):
         """
         Checks correct russian-english translation.
         """
-        UI.select_languages('ru', 'en')
-        UI.translate_text('кошка')
-        assert UI.read_translation() == 'cat'
+        self.yui.select_languages('ru', 'en')
+        self.yui.translate_text('кошка')
+        assert self.yui.read_translation() == 'cat'
 
-    def test_language_auto_identification(self):
+    def test_russian_language_auto_identification(self):
         """
-        Checks correct language auto-identification.
+        Checks correct russian language auto-identification.
         """
-        UI.translate_text('собака')
-        assert UI.check_expected_src_language('РУССКИЙ')
+        self.yui.translate_text('собака')
+        assert self.yui.check_expected_src_language('РУССКИЙ')
+
+    def test_english_language_auto_identification(self):
+        """
+        Checks correct english language auto-identification.
+        """
+        self.yui.translate_text('dog')
+        assert self.yui.check_expected_src_language('АНГЛИЙСКИЙ')
+
+    def test_clear_button(self):
+        """
+        Checks, that clear button works.
+        """
+        self.yui.translate_text("mouse")
+        self.yui.press_clear_button()
+
+        assert self.yui.read_source_text() == ""
 
     def test_virtual_keyboard(self):
         """
         Checks, that virtual keyboard works.
         """
-        UI.select_languages('en', 'ru')
-        UI.virtual_keyboard_type_cat()
-        assert UI.read_source_text() == 'cat'
-
+        self.yui.type_with_virtual_keyboard("A")
+        assert self.yui.read_source_text() == 'a'

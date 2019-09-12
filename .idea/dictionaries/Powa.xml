@@ -4,6 +4,7 @@
       <w>chromedriver</w>
       <w>keycode</w>
       <w>yandex</w>
+      <w>yatr</w>
     </words>
   </dictionary>
 </component>

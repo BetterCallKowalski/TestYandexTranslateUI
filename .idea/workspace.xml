@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e7ffc58-cd09-4080-90be-cad4199989b3" name="Default Changelist" comment="" />
+    <list default="true" id="2e7ffc58-cd09-4080-90be-cad4199989b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Powa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Powa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_yandex_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_yandex_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/utils/ui.py" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,23 +18,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_yandex_ui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="187">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#6#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/utils/ui.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/yui/yui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+            <state relative-caret-position="1105">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="119">
+                <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -45,13 +86,19 @@
       <find>read_src_language</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/tests/test_yandex_ui.py" />
         <option value="$PROJECT_DIR$/tests/utils/ui.py" />
+        <option value="$PROJECT_DIR$/api_config.yml" />
+        <option value="$PROJECT_DIR$/tests/yui/yui.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/config.yml" />
+        <option value="$PROJECT_DIR$/tests/test_yandex_ui.py" />
       </list>
     </option>
   </component>
@@ -61,6 +108,7 @@
     <option name="width" value="1890" />
     <option name="height" value="1020" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -83,13 +131,16 @@
               <item name="TestYandexTranslateUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestYandexTranslateUI" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="yui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,34 +190,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 14m 12s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 08m 43s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 15m 08s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 12m 37s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 17m 58s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 16m 06s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 21m 58s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 17m 02s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 24m 57s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 18m 06s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 25m 45s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 25m 05s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 34m 39s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 26m 58s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 54m 49s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 27m 30s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 56m 16s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 36m 51s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.09 at 06h 56m 33s.xml">
+    <history-entry file="pytest_in_test_yandex_ui_py - 2019.09.12 at 06h 37m 17s.xml">
       <configuration name="pytest in test_yandex_ui.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -194,6 +245,40 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/utils/ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/yui/yui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -204,8 +289,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           </first_editor>
           <second_editor />
         </state>
@@ -213,17 +298,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_yandex_ui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/utils/ui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+        <state relative-caret-position="187">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>
       </provider>
